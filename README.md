@@ -43,20 +43,31 @@ javac CRUDConsole.java
 java -cp ".;path/to/mysql-connector-j-9.3.0.jar" CRUDConsole
 Update DB connection in CRUDConsole.java
 
-java
-Copy
-Edit
 String url = "jdbc:mysql://localhost:3306/xyz_company";
 String username = "root";
 String password = "your_password";
-📁 Project Structure
-bash
-Copy
-Edit
-├── DDL project.sql            # Table schema
-├── project db.sql             # Inserts and views
-├── CRUDConsole.java           # Java app for interaction
-├── ER diagram.pdf             # Conceptual design
-├── EER diagram done.pdf       # Enhanced ER model
-├── LOGICAL DIAGRAM DONE.pdf  # Logical schema diagram
-├── Assumptions Summary.pdf    # Assumptions made during design
+
+## 📁 Project Structure
+
+- **/docs**
+  - `ER_diagram.pdf` – Conceptual Entity-Relationship Diagram  
+  - `EER_diagram.pdf` – Enhanced ER Model  
+  - `Logical_Schema.pdf` – Logical schema with primary/foreign keys  
+  - `Assumptions_Summary.pdf` – Design assumptions and constraints  
+
+- **/sql**
+  - `ddl_schema.sql` – Table creation (DDL)  
+  - `insert_data.sql` – Sample data and inserts  
+  - `views.sql` – SQL view definitions  
+  - `full_setup.sql` – Full database build script (DDL + inserts + views)  
+
+- **/src**
+  - `CRUDConsole.java` – Java console app with JDBC integration  
+
+- **/lib**
+  - `mysql-connector-j-9.3.0.jar` – MySQL JDBC driver (download or link)  
+
+- **README.md** – Project overview, setup instructions  
+- **.gitignore** – Ignore compiled classes (`*.class`), IDE files, logs, etc.
+
+
