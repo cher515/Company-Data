@@ -1,6 +1,6 @@
 # XYZConnect: Company Database System
 
-This project is a relational database system built for managing company-wide operations, including employees, customers, job applications, interviews, salaries, product inventory, vendor supplies, and sales. It integrates a MySQL backend with a Java-based console interface using JDBC.
+This project is a relational database system built for managing company-wide operations, including employees, customers, job applications, interviews, salaries, product inventory, vendor supplies, and sales. It integrates a MySQL backend with a Java-based console interface using JDBC made in my Database class for school.
 
 ## 💡 Features
 
